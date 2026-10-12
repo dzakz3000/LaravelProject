@@ -1,4 +1,3 @@
-
 <x-admin.layout>
 
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
@@ -47,6 +46,7 @@
                         <th scope="col" class="px-6 py-4">NAME</th>
                         <th scope="col" class="px-6 py-4">NIS</th>
                         <th scope="col" class="px-6 py-4">CLASS</th>
+                        <th scope="col" class="px-6 py-4">ADDRESS</th> <!-- Ditambahkan -->
                         <th scope="col" class="px-6 py-4">STATUS</th>
                     </tr>
                 </thead>
@@ -58,7 +58,8 @@
                             {{ $student['name'] }}
                         </td>
                         <td class="px-6 py-4">{{ $student['nis'] }}</td>
-                        <td class="px-6 py-4">{{ $student['class'] }}</td>
+                        <td class="px-6 py-4">{{ $student['classroom'] }}</td>
+                        <td class="px-6 py-4">{{ $student['address'] }}</td> <!-- Ditambahkan -->
                         <td class="px-6 py-4">
                             @if(isset($student['status']) && $student['status'] == 'Inactive')
                                 <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-1 rounded dark:bg-red-900 dark:text-red-300">Inactive</span>
