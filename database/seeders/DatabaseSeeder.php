@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        $this->call(ClassroomSeeder::class);
+
         Student::factory(20)->create();
     }
 }

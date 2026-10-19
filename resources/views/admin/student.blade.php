@@ -45,7 +45,7 @@
                         <th scope="col" class="px-6 py-4">NAME</th>
                         <th scope="col" class="px-6 py-4">NIS</th>
                         <th scope="col" class="px-6 py-4">CLASS</th>
-                        <th scope="col" class="px-6 py-4">MAJOR</th> <!-- Ditambahkan -->
+                        <th scope="col" class="px-6 py-4">MAJOR</th>
                         <th scope="col" class="px-6 py-4">ADDRESS</th>
                         <th scope="col" class="px-6 py-4">STATUS</th>
                     </tr>
@@ -59,7 +59,7 @@
                         </td>
                         <td class="px-6 py-4">{{ $student['nis'] }}</td>
                         <td class="px-6 py-4">{{ $student['classroom'] }}</td>
-                        <td class="px-6 py-4">{{ $student['major'] }}</td> <!-- Ditambahkan -->
+                        <td class="px-6 py-4">{{ $student['major'] }}</td>
                         <td class="px-6 py-4">{{ $student['address'] }}</td>
                         <td class="px-6 py-4">
                             @if(isset($student['status']) && $student['status'] == 'Inactive')
