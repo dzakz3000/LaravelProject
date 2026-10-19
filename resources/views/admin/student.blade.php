@@ -30,10 +30,9 @@
             <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
                 <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option value="">--Semua Kelas--</option>
-                    <option value="X PPLG 1">X PPLG 1</option>
-                    <option value="X PPLG 2">X PPLG 2</option>
-                    <option value="XI PPLG 1">XI PPLG 1</option>
-                    <option value="XI PPLG 2">XI PPLG 2</option>
+                    <option value="11 PPLG 1">11 PPLG 1</option>
+                    <option value="11 PPLG 2">11 PPLG 2</option>
+                    <option value="11 PPLG 3">11 PPLG 3</option>
                 </select>
             </div>
         </div>
@@ -46,7 +45,8 @@
                         <th scope="col" class="px-6 py-4">NAME</th>
                         <th scope="col" class="px-6 py-4">NIS</th>
                         <th scope="col" class="px-6 py-4">CLASS</th>
-                        <th scope="col" class="px-6 py-4">ADDRESS</th> <!-- Ditambahkan -->
+                        <th scope="col" class="px-6 py-4">MAJOR</th> <!-- Ditambahkan -->
+                        <th scope="col" class="px-6 py-4">ADDRESS</th>
                         <th scope="col" class="px-6 py-4">STATUS</th>
                     </tr>
                 </thead>
@@ -59,7 +59,8 @@
                         </td>
                         <td class="px-6 py-4">{{ $student['nis'] }}</td>
                         <td class="px-6 py-4">{{ $student['classroom'] }}</td>
-                        <td class="px-6 py-4">{{ $student['address'] }}</td> <!-- Ditambahkan -->
+                        <td class="px-6 py-4">{{ $student['major'] }}</td> <!-- Ditambahkan -->
+                        <td class="px-6 py-4">{{ $student['address'] }}</td>
                         <td class="px-6 py-4">
                             @if(isset($student['status']) && $student['status'] == 'Inactive')
                                 <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-1 rounded dark:bg-red-900 dark:text-red-300">Inactive</span>

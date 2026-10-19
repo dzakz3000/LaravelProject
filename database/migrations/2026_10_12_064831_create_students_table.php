@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('nis');
             $table->string('classroom');
             $table->text('address');
+            $table->string('major');
             $table->timestamps();
         });
     }
