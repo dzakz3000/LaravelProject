@@ -12,8 +12,18 @@ class SubjectFactory extends Factory
 {
     public function definition(): array
     {
+        static $index = 0;
+        $subjects = [
+            'Matematika', 'Fisika', 'Kimia', 'Biologi', 'Bahasa Inggris',
+            'Bahasa Indonesia', 'Sejarah', 'Geografi', 'Ekonomi',
+            'Seni Budaya', 'Olahraga', 'Informatika', 'Sosiologi', 'PPKn', 'Agama'
+        ];
+
+        $name = $subjects[$index % count($subjects)];
+        $index++;
+
         return [
-            'name' => fake()->randomElement(['Matematika', 'Fisika', 'Kimia', 'Biologi', 'Bahasa Inggris', 'Bahasa Indonesia', 'Sejarah', 'Geografi', 'Ekonomi', 'Seni Budaya', 'Olahraga']),
+            'name' => $name,
         ];
     }
 }

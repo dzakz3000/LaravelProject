@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->bigInteger('niy');
             //$table->string('subjects');
-            $table->foreignId('subject_id')->constrained(); // <-- unique() dihapus di sini
+            $table->foreignId('subject_id')->constrained()->unique();
             $table->date('start_date');
             $table->timestamps();
         });
