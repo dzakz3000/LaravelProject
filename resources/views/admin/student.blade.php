@@ -57,10 +57,10 @@
                         <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             {{ $student['name'] }}
                         </td>
-                        <td class="px-6 py-4">{{ $student['nis'] }}</td>
-                        <td class="px-6 py-4">{{ $student['classroom'] }}</td>
-                        <td class="px-6 py-4">{{ $student['major'] }}</td>
-                        <td class="px-6 py-4">{{ $student['address'] }}</td>
+                        <td class="px-6 py-4">{{ $student->nis}}</td>
+                        <td class="px-6 py-4">{{ $student->classroom->name}}</td>
+                        <td class="px-6 py-4">{{ $student->major}}</td>
+                        <td class="px-6 py-4">{{ $student->address }}</td>
                         <td class="px-6 py-4">
                             @if(isset($student['status']) && $student['status'] == 'Inactive')
                                 <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-1 rounded dark:bg-red-900 dark:text-red-300">Inactive</span>
